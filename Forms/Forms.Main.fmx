@@ -1,0 +1,582 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'EduBloom'
+  ClientHeight = 572
+  ClientWidth = 308
+  Fill.Color = xFFFBFAF7
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object WODMediaPlayer: TMediaPlayer
+    Left = 264
+    Top = 24
+  end
+  object MainLayout: TScaledLayout
+    Align = Client
+    OriginalWidth = 308.000000000000000000
+    OriginalHeight = 572.000000000000000000
+    Size.Width = 308.000000000000000000
+    Size.Height = 572.000000000000000000
+    Size.PlatformDefault = False
+    object HeaderLayout: TLayout
+      Align = MostTop
+      Size.Width = 308.000000000000000000
+      Size.Height = 62.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      object HeaderLogoLayout: TLayout
+        Align = Center
+        Margins.Top = 24.000000000000000000
+        Size.Width = 185.000000000000000000
+        Size.Height = 38.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object AppNameLabel: TLabel
+          Align = Client
+          StyledSettings = [Style, FontColor]
+          Size.Width = 155.000000000000000000
+          Size.Height = 38.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Blinker'
+          TextSettings.Font.Size = 32.000000000000000000
+          TextSettings.HorzAlign = Center
+          Text = 'EduBloom'
+          TabOrder = 0
+        end
+        object LogoIconLayout: TLayout
+          Align = MostLeft
+          Size.Width = 30.000000000000000000
+          Size.Height = 38.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object LogoIconSvg: TSkSvg
+            Align = Center
+            Size.Width = 30.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+            Svg.Source = 
+              '<svg width="29" height="26" viewBox="0 0 29 26" fill="none" xmln' +
+              's="http://www.w3.org/2000/svg">'#13#10'<g clip-path="url(#clip0_5_343)' +
+              '">'#13#10'<path d="M18.291 4.99768C18.0273 1.94692 16.4459 0.373246 14' +
+              '.2994 0C12.1529 0.372848 10.5711 1.94692 10.3078 4.99768C10.0782' +
+              ' 7.65571 12.4768 11.8449 14.2994 12.9936C16.122 11.8449 18.521 7' +
+              '.65571 18.291 4.99768Z" fill="#88B7A7"/>'#13#10'<path d="M5.9281 7.915' +
+              '27C2.88453 7.37786 0.939906 8.48369 0.0207747 10.4405C-0.171079 ' +
+              '12.5906 0.954757 14.5109 3.86186 15.5527C6.39489 16.4606 11.1017' +
+              ' 15.2498 12.6939 13.8037C12.0453 11.763 8.58034 8.38392 5.9281 7' +
+              '.91567V7.91527Z" fill="#88B7A7"/>'#13#10'<path d="M17.683 24.41C20.047' +
+              '5 26.3828 22.2899 26.388 24.074 25.1486C25.3255 23.3817 25.3202 ' +
+              '21.1613 23.3283 18.8193C21.5927 16.779 16.9056 15.4967 14.7964 1' +
+              '5.9605C14.3276 18.049 15.6224 22.6913 17.683 24.41Z" fill="#88B7' +
+              'A7"/>'#13#10'<path d="M10.9156 24.41C8.55118 26.3828 6.30874 26.388 4.' +
+              '52466 25.1486C3.2732 23.3817 3.27842 21.1613 5.2704 18.8193C7.00' +
+              '592 16.779 11.6931 15.4967 13.8023 15.9605C14.2711 18.049 12.976' +
+              '3 22.6913 10.9156 24.41Z" fill="#88B7A7"/>'#13#10'<path d="M23.0718 7.' +
+              '91527C26.1153 7.37786 28.06 8.48369 28.9791 10.4405C29.1709 12.5' +
+              '906 28.0451 14.5109 25.138 15.5527C22.605 16.4606 17.8981 15.249' +
+              '8 16.3059 13.8037C16.9545 11.763 20.4195 8.38392 23.0718 7.91567' +
+              'V7.91527Z" fill="#88B7A7"/>'#13#10'</g>'#13#10'<defs>'#13#10'<clipPath id="clip0_5' +
+              '_343">'#13#10'<rect width="29" height="26" fill="white"/>'#13#10'</clipPath>' +
+              #13#10'</defs>'#13#10'</svg>'
+          end
+        end
+      end
+    end
+    object MenuSectionLayout: TLayout
+      Align = Center
+      Size.Width = 267.000000000000000000
+      Size.Height = 389.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object WordOfTheDayRectangle: TRectangle
+        Align = Top
+        Fill.Color = claWhite
+        Size.Width = 267.000000000000000000
+        Size.Height = 250.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFFF0F0F0
+        XRadius = 20.000000000000000000
+        YRadius = 20.000000000000000000
+        object MeaningLayout: TLayout
+          Align = Top
+          Position.Y = 83.000000000000000000
+          Size.Width = 267.000000000000000000
+          Size.Height = 99.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object MeaningLabel: TLabel
+            Align = Client
+            StyledSettings = [Style, FontColor]
+            Margins.Left = 17.000000000000000000
+            Margins.Top = 11.000000000000000000
+            Margins.Right = 17.000000000000000000
+            Size.Width = 233.000000000000000000
+            Size.Height = 88.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Noto Sans KR'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.VertAlign = Leading
+            Text = #46907
+            TabOrder = 0
+          end
+        end
+        object ExampleLayout: TLayout
+          Align = Client
+          Size.Width = 267.000000000000000000
+          Size.Height = 68.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object ExampleEngLabel: TLabel
+            Align = MostTop
+            StyledSettings = [Style, FontColor]
+            HitTest = True
+            Margins.Left = 17.000000000000000000
+            Margins.Right = 17.000000000000000000
+            Position.X = 17.000000000000000000
+            Size.Width = 233.000000000000000000
+            Size.Height = 34.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Blinker'
+            TextSettings.Font.Size = 11.000000000000000000
+            TextSettings.VertAlign = Leading
+            Text = 'example'
+            TabOrder = 1
+            OnClick = ExampleEngLabelClick
+          end
+          object ExampleKrLabel: TLabel
+            Align = MostTop
+            StyledSettings = [Style, FontColor]
+            Margins.Left = 17.000000000000000000
+            Margins.Right = 17.000000000000000000
+            Position.X = 17.000000000000000000
+            Position.Y = 34.000000000000000000
+            Size.Width = 233.000000000000000000
+            Size.Height = 34.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Noto Sans KR'
+            TextSettings.Font.Size = 11.000000000000000000
+            TextSettings.VertAlign = Leading
+            Text = #50696#51228
+            TabOrder = 0
+          end
+        end
+        object WODLayout: TLayout
+          Align = MostTop
+          Size.Width = 267.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object WODLogoLayout: TLayout
+            Align = Center
+            Size.Width = 250.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object WODSVG: TSkSvg
+              Align = MostLeft
+              Size.Width = 22.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+              Svg.Source = 
+                '<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmln' +
+                's="http://www.w3.org/2000/svg">'#13#10'<g clip-path="url(#clip0_6_665)' +
+                '">'#13#10'<path d="M16.875 1.35001C15.3791 1.35248 13.9186 1.80638 12.' +
+                '6848 2.65234C11.451 3.4983 10.5012 4.69694 9.95961 6.09148C9.525' +
+                '76 5.46213 8.94559 4.94755 8.26895 4.59195C7.59231 4.23635 6.839' +
+                '44 4.05037 6.07505 4.05001H4.05005V6.07501C4.05144 7.32773 4.549' +
+                '7 8.52874 5.43551 9.41455C6.32132 10.3004 7.52233 10.7986 8.7750' +
+                '5 10.8H9.45005V16.9083C7.89962 17.0599 6.45051 17.7472 5.35212 1' +
+                '8.8519L6.30657 19.8064C6.87123 19.2418 7.55405 18.8095 8.30587 1' +
+                '8.5406C9.05769 18.2717 9.8598 18.1728 10.6544 18.2511C11.449 18.' +
+                '3295 12.2164 18.583 12.9012 18.9936C13.5861 19.4042 14.1713 19.9' +
+                '615 14.6149 20.6254L15.7365 19.8743C15.1831 19.0474 14.4535 18.3' +
+                '533 13.5999 17.842C12.7464 17.3306 11.7902 17.0147 10.8 16.9169V' +
+                '10.8H11.475C13.4436 10.7978 15.3309 10.0148 16.7229 8.62281C18.1' +
+                '148 7.23083 18.8978 5.34355 18.9 3.37501V1.35001H16.875ZM8.77505' +
+                ' 9.45001C7.88026 9.44899 7.0224 9.09308 6.38969 8.46037C5.75697 ' +
+                '7.82765 5.40107 6.9698 5.40005 6.07501V5.40001H6.07505C6.96986 5' +
+                '.40097 7.82774 5.75686 8.46047 6.38959C9.09319 7.02231 9.44908 7' +
+                '.8802 9.45005 8.77501V9.45001H8.77505ZM17.55 3.37501C17.5483 4.9' +
+                '8565 16.9076 6.52981 15.7688 7.66871C14.6299 8.8076 13.0857 9.44' +
+                '822 11.475 9.45001H10.8V8.77501C10.8018 7.16436 11.4425 5.6202 1' +
+                '2.5813 4.48131C13.7202 3.34241 15.2644 2.70179 16.875 2.70001H17' +
+                '.55V3.37501Z" fill="#88B7A7"/>'#13#10'</g>'#13#10'<defs>'#13#10'<clipPath id="clip' +
+                '0_6_665">'#13#10'<rect width="21.6" height="21.6" fill="white"/>'#13#10'</cl' +
+                'ipPath>'#13#10'</defs>'#13#10'</svg>'
+            end
+            object WODLabel: TLabel
+              Align = Client
+              StyledSettings = [FontColor]
+              Size.Width = 228.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Blinker'
+              TextSettings.Font.Size = 21.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              Text = 'Word of the Day'
+              TabOrder = 1
+            end
+          end
+        end
+        object WordLayout: TLayout
+          Align = Top
+          Position.Y = 40.000000000000000000
+          Size.Width = 267.000000000000000000
+          Size.Height = 43.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object WordLabel: TLabel
+            Align = Client
+            StyledSettings = [FontColor]
+            HitTest = True
+            Margins.Left = 17.000000000000000000
+            Size.Width = 250.000000000000000000
+            Size.Height = 43.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Blinker'
+            TextSettings.Font.Size = 32.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'Word'
+            TabOrder = 0
+            OnClick = WordLabelClick
+          end
+        end
+      end
+      object MenuButtonsLayout: TLayout
+        Align = Bottom
+        Position.Y = 271.000000000000000000
+        Size.Width = 267.000000000000000000
+        Size.Height = 118.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object QuizButtonBackRect: TRectangle
+          Align = Left
+          Fill.Color = claWhite
+          Size.Width = 116.000000000000000000
+          Size.Height = 118.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFFF0F0F0
+          XRadius = 20.000000000000000000
+          YRadius = 20.000000000000000000
+          OnClick = QuizButtonBackRectClick
+          object QuizButtonLayout: TLayout
+            Align = Center
+            Size.Width = 64.000000000000000000
+            Size.Height = 85.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object QuizIconSvg: TSkSvg
+              Align = Center
+              Size.Width = 60.000000000000000000
+              Size.Height = 60.000000000000000000
+              Size.PlatformDefault = False
+              Svg.Source = 
+                '<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmln' +
+                's="http://www.w3.org/2000/svg">'#13#10'<path d="M30 14.635V52.4998" st' +
+                'roke="#88B7A7" stroke-width="3.75"/>'#13#10'<path d="M12.5 22.5L22.5 2' +
+                '5" stroke="#88B7A7" stroke-width="3.75" stroke-linecap="round"/>' +
+                #13#10'<path d="M47.5 22.5L37.5 25" stroke="#88B7A7" stroke-width="3.' +
+                '75" stroke-linecap="round"/>'#13#10'<path d="M12.5 32.5L22.5 35" strok' +
+                'e="#88B7A7" stroke-width="3.75" stroke-linecap="round"/>'#13#10'<path ' +
+                'd="M47.5 32.5L37.5 35" stroke="#88B7A7" stroke-width="3.75" stro' +
+                'ke-linecap="round"/>'#13#10'<path d="M56.875 26.346C56.875 25.3105 56.' +
+                '0355 24.471 55 24.471C53.9645 24.471 53.125 25.3105 53.125 26.34' +
+                '6H56.875ZM53.125 17.5C53.125 18.5355 53.9645 19.375 55 19.375C56' +
+                '.0355 19.375 56.875 18.5355 56.875 17.5H53.125ZM3.125 26.4267C3.' +
+                '125 27.4622 3.96447 28.3017 5 28.3017C6.03552 28.3017 6.875 27.4' +
+                '622 6.875 26.4267H3.125ZM6.875 35C6.875 33.9645 6.03552 33.125 5' +
+                ' 33.125C3.96447 33.125 3.125 33.9645 3.125 35H6.875ZM50.1397 5.6' +
+                '705C47.2937 5.76962 43.574 6.06568 40.7122 6.92238L41.7877 10.51' +
+                '48C44.1607 9.80447 47.473 9.51568 50.2702 9.41823L50.1397 5.6705' +
+                'ZM40.7122 6.92238C38.2247 7.6671 35.4265 9.1217 33.2455 10.3841L' +
+                '35.1237 13.6297C37.25 12.3992 39.7372 11.1287 41.7877 10.5148L40' +
+                '.7122 6.92238ZM9.84097 9.5587C12.2559 9.70713 14.9911 9.99572 17' +
+                '.0216 10.5315L17.9784 6.90568C15.5764 6.27183 12.5379 5.96737 10' +
+                '.071 5.81575L9.84097 9.5587ZM17.0216 10.5315C19.4269 11.1663 22.' +
+                '3871 12.5549 24.8292 13.8462L26.582 10.5311C24.0934 9.21515 20.8' +
+                '191 7.65528 17.9784 6.90568L17.0216 10.5315ZM34.951 51.8278C37.4' +
+                '285 50.507 40.497 49.0512 42.9785 48.3962L42.0215 44.7705C39.095' +
+                '7 45.5425 35.7067 47.1753 33.187 48.5185L34.951 51.8278ZM42.9785' +
+                ' 48.3962C44.9857 47.8665 47.683 47.5782 50.08 47.4285L49.8457 43' +
+                '.6857C47.3955 43.839 44.3977 44.1435 42.0215 44.7705L42.9785 48.' +
+                '3962ZM26.813 48.5185C24.2932 47.1753 20.9042 45.5425 17.9784 44.' +
+                '7705L17.0216 48.3962C19.503 49.0512 22.5715 50.507 25.049 51.827' +
+                '8L26.813 48.5185ZM17.9784 44.7705C15.6023 44.1435 12.6044 43.839' +
+                ' 10.1542 43.6857L9.9201 47.4285C12.317 47.5782 15.0141 47.8665 1' +
+                '7.0216 48.3962L17.9784 44.7705ZM53.125 40.359C53.125 42.0732 51.' +
+                '7042 43.5695 49.8457 43.6857L50.08 47.4285C53.7655 47.1977 56.87' +
+                '5 44.1995 56.875 40.359H53.125ZM56.875 12.333C56.875 8.67473 53.' +
+                '9617 5.53737 50.1397 5.6705L50.2702 9.41823C51.8072 9.3647 53.12' +
+                '5 10.629 53.125 12.333H56.875ZM3.125 40.359C3.125 44.1995 6.2344' +
+                '5 47.1977 9.9201 47.4285L10.1542 43.6857C8.29577 43.5695 6.875 4' +
+                '2.0732 6.875 40.359H3.125ZM33.187 48.5185C31.2062 49.5742 28.793' +
+                '7 49.5742 26.813 48.5185L25.049 51.8278C28.1322 53.4712 31.8677 ' +
+                '53.4712 34.951 51.8278L33.187 48.5185ZM33.2455 10.3841C31.2002 1' +
+                '1.5677 28.6542 11.6268 26.582 10.5311L24.8292 13.8462C28.0597 15' +
+                '.5544 31.9775 15.4506 35.1237 13.6297L33.2455 10.3841ZM6.875 12.' +
+                '4945C6.875 10.7516 8.25607 9.46127 9.84097 9.5587L10.071 5.81575' +
+                'C6.17542 5.57632 3.125 8.7466 3.125 12.4945H6.875ZM56.875 40.359' +
+                'V26.346H53.125V40.359H56.875ZM56.875 17.5V12.333H53.125V17.5H56.' +
+                '875ZM6.875 26.4267V12.4945H3.125V26.4267H6.875ZM6.875 40.359V35H' +
+                '3.125V40.359H6.875Z" fill="#88B7A7"/>'#13#10'</svg>'
+            end
+            object QuizButtonLabel: TLabel
+              Align = Bottom
+              StyledSettings = [Style, FontColor]
+              Position.Y = 62.000000000000000000
+              Size.Width = 64.000000000000000000
+              Size.Height = 23.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Noto Sans KR'
+              TextSettings.Font.Size = 16.000000000000000000
+              TextSettings.HorzAlign = Center
+              Text = #45800#50612' '#54617#49845
+              TabOrder = 1
+            end
+          end
+        end
+        object WrongNoteButtonBackRect: TRectangle
+          Align = Right
+          Fill.Color = claWhite
+          Position.X = 151.000000000000000000
+          Size.Width = 116.000000000000000000
+          Size.Height = 118.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFFF0F0F0
+          XRadius = 20.000000000000000000
+          YRadius = 20.000000000000000000
+          OnClick = WrongNoteButtonBackRectClick
+          object WrongNoteButtonLayout: TLayout
+            Align = Center
+            Size.Width = 64.000000000000000000
+            Size.Height = 85.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object WrongNoteIconSvg: TSkSvg
+              Align = Center
+              Size.Width = 60.000000000000000000
+              Size.Height = 60.000000000000000000
+              Size.PlatformDefault = False
+              Svg.Source = 
+                '<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmln' +
+                's="http://www.w3.org/2000/svg">'#13#10'<path d="M45.45 20.0983L46.6088' +
+                ' 18.9397C48.5283 17.0201 51.6408 17.0201 53.5603 18.9397C55.48 2' +
+                '0.8593 55.48 23.9717 53.5603 25.8912L52.4018 27.05M45.45 20.0983' +
+                'C45.45 20.0983 45.595 22.5603 47.7673 24.7327C49.9398 26.905 52.' +
+                '4018 27.05 52.4018 27.05M45.45 20.0983L34.7985 30.7497C34.077 31' +
+                '.4712 33.7163 31.832 33.406 32.2297C33.0403 32.699 32.7265 33.20' +
+                '67 32.4705 33.7437C32.2535 34.1992 32.092 34.683 31.7695 35.651L' +
+                '30.7365 38.75L30.4023 39.7525M52.4018 27.05L41.7503 37.7015C41.0' +
+                '288 38.423 40.668 38.7837 40.2703 39.094C39.801 39.4597 39.2933 ' +
+                '39.7735 38.7563 40.0295C38.3008 40.2465 37.817 40.408 36.849 40.' +
+                '7305L33.75 41.7635L32.7475 42.0977M30.4023 39.7525L30.068 40.755' +
+                '2C29.9093 41.2315 30.0333 41.7567 30.3883 42.1117C30.7433 42.466' +
+                '7 31.2685 42.5907 31.7448 42.432L32.7475 42.0977M30.4023 39.7525' +
+                'L32.7475 42.0977" stroke="#88B7A7" stroke-width="3.75"/>'#13#10'<path ' +
+                'd="M20 32.5H26.25" stroke="#88B7A7" stroke-width="3.75" stroke-l' +
+                'inecap="round"/>'#13#10'<path d="M20 22.5H36.25" stroke="#88B7A7" stro' +
+                'ke-width="3.75" stroke-linecap="round"/>'#13#10'<path d="M20 42.5H23.7' +
+                '5" stroke="#88B7A7" stroke-width="3.75" stroke-linecap="round"/>' +
+                #13#10'<path d="M7.5 35V25C7.5 15.5719 7.5 10.8579 10.4289 7.92892C13' +
+                '.3579 5 18.0719 5 27.5 5H32.5C41.928 5 46.6422 5 49.571 7.92892M' +
+                '52.5 35C52.5 44.428 52.5 49.1422 49.571 52.071M49.571 52.071C46.' +
+                '6422 55 41.928 55 32.5 55H27.5C18.0719 55 13.3579 55 10.4289 52.' +
+                '071M49.571 52.071C51.9287 49.7132 52.3885 46.199 52.4783 40" str' +
+                'oke="#88B7A7" stroke-width="3.75" stroke-linecap="round"/>'#13#10'</sv' +
+                'g>'
+            end
+            object WrongNoteButtonLabel: TLabel
+              Align = Bottom
+              StyledSettings = [Style, FontColor]
+              Position.Y = 62.000000000000000000
+              Size.Width = 64.000000000000000000
+              Size.Height = 23.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Noto Sans KR'
+              TextSettings.Font.Size = 16.000000000000000000
+              TextSettings.HorzAlign = Center
+              Text = #50724#45813' '#45432#53944
+              TabOrder = 1
+            end
+          end
+        end
+      end
+    end
+    object NavSectionLayout: TLayout
+      Align = Bottom
+      Position.Y = 493.000000000000000000
+      Size.Width = 308.000000000000000000
+      Size.Height = 79.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object NavBackRect: TRectangle
+        Align = Center
+        Corners = [TopLeft, TopRight]
+        Fill.Color = claWhite
+        Size.Width = 289.000000000000000000
+        Size.Height = 79.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFFF0F0F0
+        XRadius = 20.000000000000000000
+        YRadius = 20.000000000000000000
+        object DictionaryButtonLayout: TLayout
+          Align = Center
+          HitTest = True
+          Margins.Left = 31.000000000000000000
+          Margins.Right = 211.000000000000000000
+          Size.Width = 56.000000000000000000
+          Size.Height = 59.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          OnClick = DictionaryButtonLayoutClick
+          object DictionaryIconSvg: TSkSvg
+            Align = Center
+            Margins.Bottom = 3.000000000000000000
+            Size.Width = 36.000000000000000000
+            Size.Height = 36.000000000000000000
+            Size.PlatformDefault = False
+            Svg.Source = 
+              '<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmln' +
+              's="http://www.w3.org/2000/svg">'#13#10'<path d="M15 33C10.7574 33 8.63' +
+              '604 33 7.31802 31.6819C6 30.3639 6 28.2426 6 24V12C6 7.75735 6 5' +
+              '.63604 7.31802 4.31802C8.63604 3 10.7574 3 15 3H21C25.2426 3 27.' +
+              '3639 3 28.6819 4.31802C30 5.63604 30 7.75735 30 12M21 33C25.2426' +
+              ' 33 27.3639 33 28.6819 31.6819C30 30.3639 30 28.2426 30 24V18" s' +
+              'troke="#88B7A7" stroke-width="2.25" stroke-linecap="round"/>'#13#10'<p' +
+              'ath d="M29.8467 24H11.8467C10.4517 24 9.75423 24 9.18198 24.1533' +
+              'C7.62906 24.5694 6.4161 25.7824 6 27.3352" stroke="#88B7A7" stro' +
+              'ke-width="2.25"/>'#13#10'<path d="M10.5 24V13.5M10.5 3.75V7.5" stroke=' +
+              '"#88B7A7" stroke-width="2.25" stroke-linecap="round"/>'#13#10'<path d=' +
+              '"M19.5 24V29.2963C19.5 29.7097 19.5 29.9165 19.3576 30C19.2154 3' +
+              '0.0836 19.0209 29.9912 18.6316 29.8062L16.7683 28.9212C16.6366 2' +
+              '8.8587 16.5708 28.8273 16.5 28.8273C16.4292 28.8273 16.3634 28.8' +
+              '587 16.2317 28.9212L14.3683 29.8062C13.9791 29.9912 13.7846 30.0' +
+              '836 13.6423 30C13.5 29.9165 13.5 29.7097 13.5 29.2963V24.675" st' +
+              'roke="#88B7A7" stroke-width="2.25" stroke-linecap="round"/>'#13#10'</s' +
+              'vg>'
+          end
+          object DictionaryButtonLabel: TLabel
+            Align = Bottom
+            StyledSettings = [Style, FontColor]
+            Position.Y = 42.000000000000000000
+            Size.Width = 56.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Noto Sans KR'
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.HorzAlign = Center
+            Text = #45800#50612' '#47785#47197
+            TabOrder = 1
+          end
+        end
+        object LogButtonLayout: TLayout
+          Align = Center
+          HitTest = True
+          Size.Width = 56.000000000000000000
+          Size.Height = 59.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          OnClick = LogButtonLayoutClick
+          object LogIconSvg: TSkSvg
+            Align = Center
+            Margins.Bottom = 3.000000000000000000
+            Size.Width = 36.000000000000000000
+            Size.Height = 36.000000000000000000
+            Size.PlatformDefault = False
+            Svg.Source = 
+              '<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmln' +
+              's="http://www.w3.org/2000/svg">'#13#10'<path d="M12 18H13.5M24 18H18" ' +
+              'stroke="#88B7A7" stroke-width="2.25" stroke-linecap="round"/>'#13#10'<' +
+              'path d="M24 12H22.5M18 12H12" stroke="#88B7A7" stroke-width="2.2' +
+              '5" stroke-linecap="round"/>'#13#10'<path d="M12 24H19.5" stroke="#88B7' +
+              'A7" stroke-width="2.25" stroke-linecap="round"/>'#13#10'<path d="M4.5 ' +
+              '21V15C4.5 9.34314 4.5 6.51472 6.25735 4.75735C8.01472 3 10.8431 ' +
+              '3 16.5 3H19.5C25.1568 3 27.9853 3 29.7426 4.75735C30.7224 5.7371' +
+              '4 31.1559 7.04983 31.3478 9M31.5 15V21C31.5 26.6568 31.5 29.4853' +
+              ' 29.7426 31.2426C27.9853 33 25.1568 33 19.5 33H16.5C10.8431 33 8' +
+              '.01472 33 6.25735 31.2426C5.27758 30.2628 4.84406 28.9501 4.6522' +
+              '4 27" stroke="#88B7A7" stroke-width="2.25" stroke-linecap="round' +
+              '"/>'#13#10'</svg>'
+          end
+          object LogButtonLabel: TLabel
+            Align = Bottom
+            StyledSettings = [Style, FontColor]
+            Position.Y = 42.000000000000000000
+            Size.Width = 56.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Noto Sans KR'
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.HorzAlign = Center
+            Text = #54617#49845' '#44592#47197
+            TabOrder = 1
+          end
+        end
+        object SettingButtonLayout: TLayout
+          Align = Center
+          HitTest = True
+          Margins.Left = 217.000000000000000000
+          Margins.Right = 36.000000000000000000
+          Size.Width = 36.000000000000000000
+          Size.Height = 59.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          OnClick = SettingButtonLayoutClick
+          object SettingIconSvg: TSkSvg
+            Align = Center
+            Margins.Bottom = 3.000000000000000000
+            Size.Width = 36.000000000000000000
+            Size.Height = 36.000000000000000000
+            Size.PlatformDefault = False
+            Svg.Source = 
+              '<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmln' +
+              's="http://www.w3.org/2000/svg">'#13#10'<path d="M18 21C16.3431 21 15 1' +
+              '9.6569 15 18C15 16.3431 16.3431 15 18 15C19.6569 15 21 16.3431 2' +
+              '1 18C21 19.6569 19.6569 21 18 21Z" stroke="#88B7A7" stroke-width' +
+              '="2.25"/>'#13#10'<path d="M21 9C19.3431 9 18 7.65686 18 6C18 4.34314 1' +
+              '9.3431 3 21 3C22.6569 3 24 4.34314 24 6C24 7.65686 22.6569 9 21 ' +
+              '9Z" stroke="#88B7A7" stroke-width="2.25"/>'#13#10'<path d="M15 33C16.6' +
+              '569 33 18 31.6569 18 30C18 28.3431 16.6569 27 15 27C13.3431 27 1' +
+              '2 28.3431 12 30C12 31.6569 13.3431 33 15 33Z" stroke="#88B7A7" s' +
+              'troke-width="2.25"/>'#13#10'<path d="M26.25 30H28.5M18 30H22.125" stro' +
+              'ke="#88B7A7" stroke-width="2.25" stroke-linecap="round"/>'#13#10'<path' +
+              ' d="M9.75 6H7.5M18 6H13.875" stroke="#88B7A7" stroke-width="2.25' +
+              '" stroke-linecap="round"/>'#13#10'<path d="M28.5 18H21" stroke="#88B7A' +
+              '7" stroke-width="2.25" stroke-linecap="round"/>'#13#10'<path d="M28.5 ' +
+              '6H24" stroke="#88B7A7" stroke-width="2.25" stroke-linecap="round' +
+              '"/>'#13#10'<path d="M7.5 30H11.5" stroke="#88B7A7" stroke-width="2.25"' +
+              ' stroke-linecap="round"/>'#13#10'<path d="M15 18H11.25M8.25 18H7.5" st' +
+              'roke="#88B7A7" stroke-width="2.25" stroke-linecap="round"/>'#13#10'</s' +
+              'vg>'
+          end
+          object SettingButtonLabel: TLabel
+            Align = Bottom
+            StyledSettings = [Style, FontColor]
+            Position.Y = 42.000000000000000000
+            Size.Width = 36.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Noto Sans KR'
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.HorzAlign = Center
+            Text = #49444#51221
+            TabOrder = 1
+          end
+        end
+      end
+    end
+    object PopupLayout: TLayout
+      Align = Center
+      Size.Width = 300.000000000000000000
+      Size.Height = 248.000000000000000000
+      Size.PlatformDefault = False
+      Visible = False
+      TabOrder = 4
+    end
+  end
+end

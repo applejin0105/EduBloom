@@ -1,0 +1,153 @@
+object WordDataFrame: TWordDataFrame
+  Size.Width = 268.000000000000000000
+  Size.Height = 116.000000000000000000
+  Size.PlatformDefault = False
+  object CardBackRect: TRectangle
+    Align = Client
+    Fill.Color = claWhite
+    Size.Width = 268.000000000000000000
+    Size.Height = 116.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = xFFF0F0F0
+    XRadius = 20.000000000000000000
+    YRadius = 20.000000000000000000
+    object MainLayout: TLayout
+      Align = Client
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 248.000000000000000000
+      Size.Height = 96.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object WordHeaderLayout: TLayout
+        Align = Top
+        Size.Width = 248.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object WordContentLayout: TLayout
+          Align = Left
+          Size.Width = 124.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object WordLabel: TLabel
+            Align = Client
+            StyledSettings = [Style, FontColor]
+            Size.Width = 124.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Blinker'
+            TextSettings.Font.Size = 16.000000000000000000
+            Text = 'Word'
+            TabOrder = 0
+          end
+        end
+        object PartOfSpeechContentLayout: TLayout
+          Align = Client
+          Size.Width = 124.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object PartOfSpeechLabel: TLabel
+            Align = Client
+            StyledSettings = [Style, FontColor]
+            Size.Width = 124.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Blinker'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.HorzAlign = Trailing
+            Text = 'Part of speech'
+            TabOrder = 0
+          end
+        end
+      end
+      object MeaningSectionLayout: TLayout
+        Align = Top
+        Margins.Top = 8.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.Y = 30.000000000000000000
+        Size.Width = 248.000000000000000000
+        Size.Height = 14.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object MeaningContentLayout: TLayout
+          Align = Client
+          Size.Width = 248.000000000000000000
+          Size.Height = 14.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object MeaningLabel: TLabel
+            Align = Client
+            StyledSettings = [Style]
+            Size.Width = 248.000000000000000000
+            Size.Height = 14.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Noto Sans KR'
+            TextSettings.Font.Size = 10.000000000000000000
+            TextSettings.FontColor = xFF8C8C8C
+            Text = #45800#50612
+            TabOrder = 0
+          end
+        end
+      end
+      object KrExampleSectionLayout: TLayout
+        Align = Top
+        Position.Y = 71.000000000000000000
+        Size.Width = 248.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object KrExampleContentLayout: TLayout
+          Align = Client
+          Size.Width = 248.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object KrExampleLabel: TLabel
+            Align = Client
+            StyledSettings = [Style]
+            Size.Width = 248.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Noto Sans KR'
+            TextSettings.Font.Size = 10.000000000000000000
+            TextSettings.FontColor = xFF8C8C8C
+            Text = #45208#45716' '#50724#45720' '#49352#47196#50868' '#45800#50612#47484' '#48176#50912#45796'.'
+            TabOrder = 0
+          end
+        end
+      end
+      object EngExampleSectionLayout: TLayout
+        Align = Top
+        Margins.Bottom = 8.000000000000000000
+        Position.Y = 49.000000000000000000
+        Size.Width = 248.000000000000000000
+        Size.Height = 14.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object EngExampleContentLayout: TLayout
+          Align = Client
+          Size.Width = 248.000000000000000000
+          Size.Height = 14.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object EngExampleLabel: TLabel
+            Align = Client
+            StyledSettings = [Style, FontColor]
+            Size.Width = 248.000000000000000000
+            Size.Height = 14.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Blinker'
+            TextSettings.Font.Size = 16.000000000000000000
+            Text = 'I learned a new word today.'
+            TabOrder = 0
+          end
+        end
+      end
+    end
+  end
+end

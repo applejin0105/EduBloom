@@ -1,0 +1,235 @@
+object QuizStartFrame: TQuizStartFrame
+  Size.Width = 308.000000000000000000
+  Size.Height = 572.000000000000000000
+  Size.PlatformDefault = False
+  object QuizStartBackgroundRect: TRectangle
+    Align = Client
+    Fill.Color = xFFF0F0F0
+    Size.Width = 308.000000000000000000
+    Size.Height = 572.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object MainLayout: TLayout
+      Align = Client
+      Size.Width = 308.000000000000000000
+      Size.Height = 572.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object LogoSectionLayout: TLayout
+        Align = MostTop
+        Size.Width = 308.000000000000000000
+        Size.Height = 327.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object LogoCardBackRect: TRectangle
+          Align = Center
+          Fill.Color = claWhite
+          Margins.Top = 91.000000000000000000
+          Size.Width = 252.000000000000000000
+          Size.Height = 236.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFFF0F0F0
+          Stroke.Thickness = 2.000000000000000000
+          XRadius = 25.000000000000000000
+          YRadius = 25.000000000000000000
+          object LogoIconSvg: TSkSvg
+            Align = Center
+            Size.Width = 120.000000000000000000
+            Size.Height = 159.000000000000000000
+            Size.PlatformDefault = False
+            Svg.Source = 
+              '<svg width="120" height="159" viewBox="0 0 120 159" fill="none" ' +
+              'xmlns="http://www.w3.org/2000/svg">'#13#10'<path d="M60 68.27V143.999"' +
+              ' stroke="#88B7A7" stroke-width="7.5"/>'#13#10'<path d="M25 84L45 89" s' +
+              'troke="#88B7A7" stroke-width="7.5" stroke-linecap="round"/>'#13#10'<pa' +
+              'th d="M95 84L75 89" stroke="#88B7A7" stroke-width="7.5" stroke-l' +
+              'inecap="round"/>'#13#10'<path d="M25 104L45 109" stroke="#88B7A7" stro' +
+              'ke-width="7.5" stroke-linecap="round"/>'#13#10'<path d="M95 104L75 109' +
+              '" stroke="#88B7A7" stroke-width="7.5" stroke-linecap="round"/>'#13#10 +
+              '<path d="M113.75 91.692C113.75 89.621 112.071 87.942 110 87.942C' +
+              '107.929 87.942 106.25 89.621 106.25 91.692H113.75ZM106.25 74C106' +
+              '.25 76.0711 107.929 77.75 110 77.75C112.071 77.75 113.75 76.0711' +
+              ' 113.75 74H106.25ZM6.25 91.8535C6.25 93.9245 7.92895 95.6035 10 ' +
+              '95.6035C12.071 95.6035 13.75 93.9245 13.75 91.8535H6.25ZM13.75 1' +
+              '09C13.75 106.929 12.071 105.25 10 105.25C7.92895 105.25 6.25 106' +
+              '.929 6.25 109H13.75ZM100.279 50.341C94.5875 50.5393 87.148 51.13' +
+              '14 81.4245 52.8448L83.5755 60.0297C88.3215 58.609 94.946 58.0314' +
+              ' 100.54 57.8365L100.279 50.341ZM81.4245 52.8448C76.4495 54.3342 ' +
+              '70.853 57.2434 66.491 59.7682L70.2475 66.2594C74.5 63.7985 79.47' +
+              '45 61.2575 83.5755 60.0297L81.4245 52.8448ZM19.6819 58.1174C24.5' +
+              '119 58.4143 29.9821 58.9915 34.0432 60.0631L35.9568 52.8114C31.1' +
+              '527 51.5437 25.0758 50.9348 20.142 50.6315L19.6819 58.1174ZM34.0' +
+              '432 60.0631C38.8538 61.3326 44.7743 64.1098 49.6583 66.6924L53.1' +
+              '64 60.0622C48.1868 57.4303 41.6383 54.3106 35.9568 52.8114L34.04' +
+              '32 60.0631ZM69.902 142.656C74.857 140.014 80.994 137.103 85.957 ' +
+              '135.793L84.043 128.541C78.1915 130.085 71.4135 133.351 66.374 13' +
+              '6.037L69.902 142.656ZM85.957 135.793C89.9715 134.733 95.366 134.' +
+              '157 100.16 133.857L99.6915 126.372C94.791 126.678 88.7955 127.28' +
+              '7 84.043 128.541L85.957 135.793ZM53.626 136.037C48.5863 133.351 ' +
+              '41.8085 130.085 35.9568 128.541L34.0432 135.793C39.006 137.103 4' +
+              '5.143 140.014 50.098 142.656L53.626 136.037ZM35.9568 128.541C31.' +
+              '2046 127.287 25.2088 126.678 20.3084 126.372L19.8402 133.857C24.' +
+              '634 134.157 30.0283 134.733 34.0432 135.793L35.9568 128.541ZM106' +
+              '.25 119.718C106.25 123.147 103.408 126.139 99.6915 126.372L100.1' +
+              '6 133.857C107.531 133.396 113.75 127.399 113.75 119.718H106.25ZM' +
+              '113.75 63.666C113.75 56.3495 107.923 50.0748 100.279 50.341L100.' +
+              '54 57.8365C103.614 57.7294 106.25 60.2581 106.25 63.666H113.75ZM' +
+              '6.25 119.718C6.25 127.399 12.4689 133.396 19.8402 133.857L20.308' +
+              '4 126.372C16.5915 126.139 13.75 123.147 13.75 119.718H6.25ZM66.3' +
+              '74 136.037C62.4125 138.149 57.5875 138.149 53.626 136.037L50.098' +
+              ' 142.656C56.2645 145.943 63.7355 145.943 69.902 142.656L66.374 1' +
+              '36.037ZM66.491 59.7682C62.4005 62.1355 57.3085 62.2535 53.164 60' +
+              '.0622L49.6583 66.6924C56.1195 70.1089 63.955 69.9013 70.2475 66.' +
+              '2594L66.491 59.7682ZM13.75 63.989C13.75 60.5031 16.5121 57.9226 ' +
+              '19.6819 58.1174L20.142 50.6315C12.3508 50.1527 6.25 56.4932 6.25' +
+              ' 63.989H13.75ZM113.75 119.718V91.692H106.25V119.718H113.75ZM113.' +
+              '75 74V63.666H106.25V74H113.75ZM13.75 91.8535V63.989H6.25V91.8535' +
+              'H13.75ZM13.75 119.718V109H6.25V119.718H13.75Z" fill="#88B7A7"/>'#13 +
+              #10'<g clip-path="url(#clip0_11_272)">'#13#10'<path d="M66.9514 9.80314C6' +
+              '6.4331 3.81896 63.3249 0.732136 59.1059 0C54.8869 0.731356 51.77' +
+              '79 3.81896 51.2603 9.80314C50.8091 15.017 55.5235 23.2342 59.105' +
+              '9 25.4875C62.6883 23.2342 67.4035 15.017 66.9514 9.80314Z" fill=' +
+              '"#88B7A7"/>'#13#10'<path d="M42.652 15.5261C36.6698 14.472 32.8476 16.' +
+              '6411 31.0411 20.4795C30.664 24.6969 32.8768 28.4636 38.5908 30.5' +
+              '072C43.5695 32.288 52.8209 29.9131 55.9504 27.0765C54.6756 23.07' +
+              '36 47.865 16.4454 42.652 15.5269V15.5261Z" fill="#88B7A7"/>'#13#10'<pa' +
+              'th d="M65.7564 47.8812C70.4037 51.7508 74.8113 51.761 78.3179 49' +
+              '.3299C80.7777 45.8641 80.7674 41.5087 76.8522 36.9148C73.441 32.' +
+              '9126 64.2283 30.3973 60.0826 31.3072C59.1612 35.4037 61.7062 44.' +
+              '5098 65.7564 47.8812Z" fill="#88B7A7"/>'#13#10'<path d="M52.4548 47.88' +
+              '12C47.8074 51.7508 43.3998 51.761 39.8932 49.3299C37.4334 45.864' +
+              '1 37.4437 41.5087 41.359 36.9148C44.7702 32.9126 53.9829 30.3973' +
+              ' 58.1285 31.3072C59.0499 35.4037 56.505 44.5098 52.4548 47.8812Z' +
+              '" fill="#88B7A7"/>'#13#10'<path d="M76.348 15.5261C82.3301 14.472 86.1' +
+              '523 16.6411 87.9589 20.4795C88.336 24.6969 86.1231 28.4636 80.40' +
+              '92 30.5072C75.4305 32.288 66.1791 29.9131 63.0496 27.0765C64.324' +
+              '4 23.0736 71.1349 16.4454 76.348 15.5269V15.5261Z" fill="#88B7A7' +
+              '"/>'#13#10'</g>'#13#10'<defs>'#13#10'<clipPath id="clip0_11_272">'#13#10'<rect width="57' +
+              '" height="51" fill="white" transform="translate(31)"/>'#13#10'</clipPa' +
+              'th>'#13#10'</defs>'#13#10'</svg>'
+          end
+        end
+      end
+      object CountSectionLayout: TLayout
+        Align = Top
+        Position.Y = 327.000000000000000000
+        Size.Width = 308.000000000000000000
+        Size.Height = 87.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object CountSelectorSectionLayout: TLayout
+          Align = Center
+          Margins.Top = 25.000000000000000000
+          Size.Width = 134.000000000000000000
+          Size.Height = 62.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object DecreaseButtonLayout: TLayout
+            Align = MostLeft
+            HitTest = True
+            Size.Width = 30.000000000000000000
+            Size.Height = 62.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            OnClick = DecreaseButtonLayoutClick
+            object DecreaseIconSvg: TSkSvg
+              Align = Center
+              Size.Width = 30.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              Svg.Source = 
+                '<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmln' +
+                's="http://www.w3.org/2000/svg">'#13#10'<path d="M18.5 7.5L11 15L18.5 2' +
+                '2.5" stroke="#88B7A7" stroke-width="1.875" stroke-linecap="round' +
+                '" stroke-linejoin="round"/>'#13#10'</svg>'
+            end
+          end
+          object CountValueSectionLayout: TLayout
+            Align = Client
+            Size.Width = 74.000000000000000000
+            Size.Height = 62.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object CountValueBackRect: TRectangle
+              Align = Client
+              Fill.Color = claWhite
+              Size.Width = 74.000000000000000000
+              Size.Height = 62.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = xFFF0F0F0
+              Stroke.Thickness = 2.000000000000000000
+              XRadius = 20.000000000000000000
+              YRadius = 20.000000000000000000
+              object CountValueLabel: TLabel
+                Align = Client
+                StyledSettings = [Style, FontColor]
+                Size.Width = 74.000000000000000000
+                Size.Height = 62.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'Blinker'
+                TextSettings.Font.Size = 21.000000000000000000
+                TextSettings.HorzAlign = Center
+                Text = '20'
+                TabOrder = 0
+              end
+            end
+          end
+          object IncreaseButtonLayout: TLayout
+            Align = MostRight
+            HitTest = True
+            Position.X = 104.000000000000000000
+            Size.Width = 30.000000000000000000
+            Size.Height = 62.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            OnClick = IncreaseButtonLayoutClick
+            object IncreaseIconSvg: TSkSvg
+              Align = Center
+              Size.Width = 30.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              Svg.Source = 
+                '<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmln' +
+                's="http://www.w3.org/2000/svg">'#13#10'<path d="M11.5 22.5L19 15L11.5 ' +
+                '7.5" stroke="#88B7A7" stroke-width="1.875" stroke-linecap="round' +
+                '" stroke-linejoin="round"/>'#13#10'</svg>'
+            end
+          end
+        end
+      end
+      object StartButtonSectionLayout: TLayout
+        Align = Client
+        Size.Width = 308.000000000000000000
+        Size.Height = 158.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object StartButtonBackRect: TRectangle
+          Align = Center
+          Fill.Color = xFF88B7A7
+          Margins.Top = 29.000000000000000000
+          Margins.Bottom = 74.000000000000000000
+          Size.Width = 112.000000000000000000
+          Size.Height = 55.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 20.000000000000000000
+          YRadius = 20.000000000000000000
+          OnClick = StartButtonBackRectClick
+          object StartButtonLabel: TLabel
+            Align = Client
+            StyledSettings = [Style]
+            Size.Width = 112.000000000000000000
+            Size.Height = 55.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Blinker'
+            TextSettings.Font.Size = 24.000000000000000000
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            Text = 'Bloom!'
+            TabOrder = 0
+          end
+        end
+      end
+    end
+  end
+end

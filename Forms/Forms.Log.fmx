@@ -1,0 +1,647 @@
+object LogForm: TLogForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 572
+  ClientWidth = 308
+  Fill.Color = xFFFBFAF7
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  OnHide = FormHide
+  DesignerMasterStyle = 0
+  object MainLayout: TScaledLayout
+    Align = Client
+    OriginalWidth = 308.000000000000000000
+    OriginalHeight = 572.000000000000000000
+    Size.Width = 308.000000000000000000
+    Size.Height = 572.000000000000000000
+    Size.PlatformDefault = False
+    object ChartSecionLayout: TLayout
+      Align = Top
+      Position.Y = 187.000000000000000000
+      Size.Width = 308.000000000000000000
+      Size.Height = 148.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      object ChartBackRect: TRectangle
+        Align = Center
+        Fill.Color = claWhite
+        Size.Width = 275.000000000000000000
+        Size.Height = 148.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFFF0F0F0
+        XRadius = 20.000000000000000000
+        YRadius = 20.000000000000000000
+        object ChartLegendLayout: TLayout
+          Align = Center
+          Margins.Left = 13.000000000000000000
+          Margins.Top = 9.000000000000000000
+          Margins.Right = 222.000000000000000000
+          Margins.Bottom = 121.000000000000000000
+          Size.Width = 40.000000000000000000
+          Size.Height = 18.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object LineChartLayout: TLayout
+            Align = Top
+            Size.Width = 40.000000000000000000
+            Size.Height = 9.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object LineChartIconLayout: TLayout
+              Align = Left
+              Size.Width = 10.000000000000000000
+              Size.Height = 9.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object LineChartIconSvg: TSkSvg
+                Align = Center
+                Size.Width = 10.000000000000000000
+                Size.Height = 1.000000000000000000
+                Size.PlatformDefault = False
+                Svg.Source = 
+                  '<svg width="10" height="1" viewBox="0 0 10 1" fill="none" xmlns=' +
+                  '"http://www.w3.org/2000/svg">'#13#10'<line y1="0.5" x2="10" y2="0.5" s' +
+                  'troke="#88B7A7"/>'#13#10'</svg>'
+              end
+            end
+            object LineChartLabelLayout: TLayout
+              Align = Client
+              Size.Width = 30.000000000000000000
+              Size.Height = 9.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object LineChartLabel: TLabel
+                Align = Client
+                StyledSettings = [Style, FontColor]
+                Size.Width = 30.000000000000000000
+                Size.Height = 9.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'Noto Sans KR'
+                TextSettings.Font.Size = 6.000000000000000000
+                TextSettings.HorzAlign = Center
+                Text = #54617#49845' '#49884#44036
+                TabOrder = 0
+              end
+            end
+          end
+          object BarChartLayout: TLayout
+            Align = Client
+            Size.Width = 40.000000000000000000
+            Size.Height = 9.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object BarChartIconLayout: TLayout
+              Align = Left
+              Size.Width = 10.000000000000000000
+              Size.Height = 9.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object BarChartIconSvg: TSkSvg
+                Align = Center
+                Size.Width = 10.000000000000000000
+                Size.Height = 4.000000000000000000
+                Size.PlatformDefault = False
+                Svg.Source = 
+                  '<svg width="10" height="4" viewBox="0 0 10 4" fill="none" xmlns=' +
+                  '"http://www.w3.org/2000/svg">'#13#10'<rect x="10" width="4" height="10' +
+                  '" transform="rotate(90 10 0)" fill="#C1D6D2"/>'#13#10'</svg>'
+              end
+            end
+            object BarChartLabelLayout: TLayout
+              Align = Client
+              Size.Width = 30.000000000000000000
+              Size.Height = 9.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object BarChartLabel: TLabel
+                Align = Client
+                StyledSettings = [Style, FontColor]
+                Size.Width = 30.000000000000000000
+                Size.Height = 9.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'Noto Sans KR'
+                TextSettings.Font.Size = 6.000000000000000000
+                TextSettings.HorzAlign = Center
+                Text = #51221#45813#47456
+                TabOrder = 0
+              end
+            end
+          end
+        end
+      end
+    end
+    object HeaderSectionLayout: TLayout
+      Align = MostTop
+      Size.Width = 308.000000000000000000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object HeaderTitleLayout: TLayout
+        Align = Left
+        Position.X = 50.000000000000000000
+        Size.Width = 122.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object HeaderTitleLabel: TLabel
+          Align = Bottom
+          StyledSettings = [Style, FontColor]
+          Position.Y = 29.000000000000000000
+          Size.Width = 122.000000000000000000
+          Size.Height = 31.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Noto Sans KR'
+          TextSettings.Font.Size = 26.000000000000000000
+          TextSettings.HorzAlign = Center
+          Text = #54617#49845' '#44592#47197
+          TabOrder = 0
+        end
+      end
+      object HomeIconSvgLayout: TLayout
+        Align = MostLeft
+        Margins.Left = 20.000000000000000000
+        Position.X = 20.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object HomeIconSvg: TSkSvg
+          Align = Bottom
+          HitTest = True
+          Position.Y = 30.000000000000000000
+          Size.Width = 30.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          OnClick = HomeIconSvgClick
+          Svg.Source = 
+            '<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmln' +
+            's="http://www.w3.org/2000/svg">'#13#10'<path d="M18.5 7.5L11 15L18.5 2' +
+            '2.5" stroke="#88B7A7" stroke-width="1.875" stroke-linecap="round' +
+            '" stroke-linejoin="round"/>'#13#10'</svg>'
+        end
+      end
+    end
+    object HistorySectionLayout: TLayout
+      Align = Client
+      Size.Width = 308.000000000000000000
+      Size.Height = 237.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object HistoryTitleSectionLayout: TLayout
+        Align = MostTop
+        Size.Width = 308.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object HistoryTitleLabel: TLabel
+          Align = Center
+          StyledSettings = [Style, FontColor]
+          Margins.Left = 20.000000000000000000
+          Margins.Top = 17.000000000000000000
+          Margins.Right = 224.000000000000000000
+          Size.Width = 64.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Noto Sans KR'
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.HorzAlign = Center
+          Text = #51648#45212' '#54617#49845
+          TabOrder = 0
+        end
+      end
+      object HistoryListContainerLayout: TLayout
+        Align = Client
+        Margins.Left = 17.000000000000000000
+        Margins.Top = 8.000000000000000000
+        Margins.Right = 17.000000000000000000
+        Size.Width = 274.000000000000000000
+        Size.Height = 189.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object HistoryListBackRect: TRectangle
+          Align = Client
+          ClipChildren = True
+          Corners = [TopLeft, TopRight]
+          Fill.Color = claWhite
+          Size.Width = 274.000000000000000000
+          Size.Height = 189.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFFF0F0F0
+          XRadius = 20.000000000000000000
+          YRadius = 20.000000000000000000
+          object HistoryListScrollBox: TScrollBox
+            Align = Client
+            Padding.Top = 8.000000000000000000
+            Size.Width = 274.000000000000000000
+            Size.Height = 189.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            ShowScrollBars = False
+            Viewport.Width = 274.000000000000000000
+            Viewport.Height = 189.000000000000000000
+          end
+        end
+      end
+    end
+    object SummarySectionLayout: TLayout
+      Align = Top
+      Position.Y = 60.000000000000000000
+      Size.Width = 308.000000000000000000
+      Size.Height = 127.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object SummaryTitleSectionLayout: TLayout
+        Align = MostTop
+        Size.Width = 308.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object SummaryTitleLabelLayout: TLayout
+          Align = Left
+          Margins.Left = 20.000000000000000000
+          Position.X = 20.000000000000000000
+          Size.Width = 30.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object SummaryTitleLabel: TLabel
+            Align = Center
+            StyledSettings = [Style, FontColor]
+            Margins.Top = 17.000000000000000000
+            Size.Width = 32.000000000000000000
+            Size.Height = 29.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Noto Sans KR'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.HorzAlign = Center
+            Text = #50836#50557
+            TabOrder = 0
+          end
+        end
+      end
+      object SummaryStatsGridLayout: TGridLayout
+        Align = Client
+        ItemHeight = 70.000000000000000000
+        ItemWidth = 70.000000000000000000
+        Padding.Left = 14.000000000000000000
+        Padding.Top = 4.000000000000000000
+        Orientation = Horizontal
+        Size.Width = 308.000000000000000000
+        Size.Height = 77.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object StudiedWordsCardBackRect: TRectangle
+          Fill.Color = claWhite
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 19.000000000000000000
+          Position.Y = 9.000000000000000000
+          Size.Width = 60.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFFF0F0F0
+          XRadius = 13.000000000000000000
+          YRadius = 13.000000000000000000
+          object StudiedWordsCountSectionLayout: TLayout
+            Align = Top
+            Size.Width = 60.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object StudiedWordsCountValueLayout: TLayout
+              Align = Left
+              Size.Width = 35.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object StudiedWordsCountValueLabel: TLabel
+                Align = Client
+                StyledSettings = [Style, FontColor]
+                Size.Width = 35.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'Noto Sans KR'
+                TextSettings.Font.Size = 16.000000000000000000
+                TextSettings.HorzAlign = Trailing
+                TextSettings.VertAlign = Trailing
+                Text = '0'
+                TabOrder = 0
+              end
+            end
+            object StudiedWordsCountUnitLayout: TLayout
+              Align = Client
+              Size.Width = 25.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object StudiedWordsCountUnitLabel: TLabel
+                Align = Client
+                StyledSettings = [Style]
+                Size.Width = 25.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'Noto Sans KR'
+                TextSettings.FontColor = xFFB8B8B8
+                TextSettings.VertAlign = Trailing
+                Text = #44060
+                TabOrder = 0
+              end
+            end
+          end
+          object StudiedWordsTitleLayout: TLayout
+            Align = Client
+            Size.Width = 60.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object StudiedWordsTitleLabel: TLabel
+              Align = Client
+              StyledSettings = [Style]
+              Size.Width = 60.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Noto Sans KR'
+              TextSettings.HorzAlign = Center
+              TextSettings.VertAlign = Leading
+              Text = #49845#46301
+              TabOrder = 0
+            end
+          end
+        end
+        object AccuracyCardBackRect: TRectangle
+          Fill.Color = claWhite
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 89.000000000000000000
+          Position.Y = 9.000000000000000000
+          Size.Width = 60.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFFF0F0F0
+          XRadius = 13.000000000000000000
+          YRadius = 13.000000000000000000
+          object AccuracyCountSectionLayout: TLayout
+            Align = Top
+            Size.Width = 60.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object AccuracyCountValueLayout: TLayout
+              Align = Left
+              Size.Width = 35.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object AccuracyCountValueLabel: TLabel
+                Align = Client
+                StyledSettings = [Style, FontColor]
+                Size.Width = 35.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'Noto Sans KR'
+                TextSettings.Font.Size = 16.000000000000000000
+                TextSettings.HorzAlign = Trailing
+                TextSettings.VertAlign = Trailing
+                Text = '0'
+                TabOrder = 0
+              end
+            end
+            object AccuracyCountUnitLayout: TLayout
+              Align = Client
+              Size.Width = 25.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object AccuracyCountUnitLabel: TLabel
+                Align = Client
+                StyledSettings = [Style]
+                Size.Width = 25.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'Noto Sans KR'
+                TextSettings.FontColor = xFFB8B8B8
+                TextSettings.VertAlign = Trailing
+                Text = '%'
+                TabOrder = 0
+              end
+            end
+          end
+          object AccuracyTitleLayout: TLayout
+            Align = Client
+            Size.Width = 60.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object AccuracyTitleLabel: TLabel
+              Align = Client
+              StyledSettings = [Style]
+              Size.Width = 60.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Noto Sans KR'
+              TextSettings.HorzAlign = Center
+              TextSettings.VertAlign = Leading
+              Text = #51221#45813#47456
+              TabOrder = 0
+            end
+          end
+        end
+        object StudyTimeCardBackRect: TRectangle
+          Fill.Color = claWhite
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 159.000000000000000000
+          Position.Y = 9.000000000000000000
+          Size.Width = 60.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFFF0F0F0
+          XRadius = 13.000000000000000000
+          YRadius = 13.000000000000000000
+          object StudyTimeHoursSectionLayout: TLayout
+            Align = Top
+            Size.Width = 60.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object StudyTimeHoursValueLayout: TLayout
+              Align = Left
+              Size.Width = 27.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object StudyTimeHoursValueLabel: TLabel
+                Align = Client
+                StyledSettings = [Style, FontColor]
+                Size.Width = 27.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'Noto Sans KR'
+                TextSettings.Font.Size = 16.000000000000000000
+                TextSettings.HorzAlign = Trailing
+                TextSettings.VertAlign = Trailing
+                Text = '0'
+                TabOrder = 0
+              end
+            end
+            object StudyTimeHoursUnitLayout: TLayout
+              Align = Client
+              Size.Width = 33.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object StudyTimeHoursUnitLabel: TLabel
+                Align = Client
+                StyledSettings = [Style]
+                Size.Width = 33.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'Noto Sans KR'
+                TextSettings.FontColor = xFFB8B8B8
+                TextSettings.VertAlign = Trailing
+                Text = #48516
+                TabOrder = 0
+              end
+            end
+          end
+          object StudyTimeMinutesSectionLayout: TLayout
+            Align = Client
+            Size.Width = 60.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object StudyTimeMinutesValueLayout: TLayout
+              Align = MostLeft
+              Size.Width = 30.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object StudyTimeMinutesValueLabel: TLabel
+                Align = Client
+                StyledSettings = [Style]
+                Size.Width = 30.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'Noto Sans KR'
+                TextSettings.HorzAlign = Trailing
+                TextSettings.VertAlign = Leading
+                Text = '0'
+                TabOrder = 0
+              end
+            end
+            object StudyTimeMinutesUnitLayout: TLayout
+              Align = Client
+              Size.Width = 30.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object StudyTimeMinutesUnitLabel: TLabel
+                Align = Client
+                StyledSettings = [Style]
+                Size.Width = 30.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'Noto Sans KR'
+                TextSettings.FontColor = xFFB8B8B8
+                TextSettings.VertAlign = Leading
+                Text = #52488
+                TabOrder = 0
+              end
+            end
+          end
+        end
+        object StreakCardBackRect: TRectangle
+          Fill.Color = claWhite
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 229.000000000000000000
+          Position.Y = 9.000000000000000000
+          Size.Width = 60.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFFF0F0F0
+          XRadius = 13.000000000000000000
+          YRadius = 13.000000000000000000
+          object DayStreakSectionLayout: TLayout
+            Align = Top
+            Size.Width = 60.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object DayStreakValueLayout: TLayout
+              Align = Left
+              Size.Width = 35.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object DayStreakValueLabel: TLabel
+                Align = Client
+                StyledSettings = [Style, FontColor]
+                Size.Width = 35.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'Noto Sans KR'
+                TextSettings.Font.Size = 16.000000000000000000
+                TextSettings.HorzAlign = Trailing
+                TextSettings.VertAlign = Trailing
+                Text = '0'
+                TabOrder = 0
+              end
+            end
+            object DayStreakUnitLayout: TLayout
+              Align = Client
+              Size.Width = 25.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object DayStreakUnitLabel: TLabel
+                Align = Client
+                StyledSettings = [Style]
+                Size.Width = 25.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'Noto Sans KR'
+                TextSettings.FontColor = xFFB8B8B8
+                TextSettings.VertAlign = Trailing
+                Text = #51068
+                TabOrder = 0
+              end
+            end
+          end
+          object DayStreakTitleLayout: TLayout
+            Align = Client
+            Size.Width = 60.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object DayStreakTitleLabel: TLabel
+              Align = Client
+              StyledSettings = [Style]
+              Size.Width = 60.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Noto Sans KR'
+              TextSettings.HorzAlign = Center
+              TextSettings.VertAlign = Leading
+              Text = #50672#49549
+              TabOrder = 0
+            end
+          end
+        end
+      end
+    end
+  end
+end

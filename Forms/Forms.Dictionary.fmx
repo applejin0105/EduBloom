@@ -1,0 +1,163 @@
+object DictionaryForm: TDictionaryForm
+  Left = 0
+  Top = 0
+  Caption = 'DictionaryForm'
+  ClientHeight = 572
+  ClientWidth = 308
+  Fill.Color = xFFFBFAF7
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object WordSoundPlayer: TMediaPlayer
+    Left = 248
+    Top = 528
+  end
+  object MainLayout: TScaledLayout
+    Align = Client
+    OriginalWidth = 308.000000000000000000
+    OriginalHeight = 572.000000000000000000
+    Size.Width = 308.000000000000000000
+    Size.Height = 572.000000000000000000
+    Size.PlatformDefault = False
+    object ContentLayout: TLayout
+      Align = Client
+      Margins.Left = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Size.Width = 268.000000000000000000
+      Size.Height = 439.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object WordListScrollBox: TScrollBox
+        Align = Client
+        Margins.Top = 24.000000000000000000
+        Margins.Bottom = 51.000000000000000000
+        Size.Width = 268.000000000000000000
+        Size.Height = 364.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        ShowScrollBars = False
+        Viewport.Width = 268.000000000000000000
+        Viewport.Height = 364.000000000000000000
+      end
+    end
+    object SearchBoxLayout: TLayout
+      Align = Top
+      Margins.Left = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 73.000000000000000000
+      Size.Width = 268.000000000000000000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object SearchFieldRect: TRectangle
+        Align = Center
+        Fill.Color = xFFE8E8E8
+        Margins.Top = 15.000000000000000000
+        Size.Width = 267.000000000000000000
+        Size.Height = 45.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 20.000000000000000000
+        YRadius = 20.000000000000000000
+        object SearchIconLayout: TLayout
+          Align = Left
+          Size.Width = 33.599998474121090000
+          Size.Height = 45.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object SearchIconSvg: TSkSvg
+            Align = Center
+            Margins.Left = 12.000000000000000000
+            Size.Width = 21.600000381469730000
+            Size.Height = 21.600000381469730000
+            Size.PlatformDefault = False
+            Svg.Source = 
+              '<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmln' +
+              's="http://www.w3.org/2000/svg">'#13#10'<path d="M16.6497 16.65L19.7997' +
+              ' 19.8" stroke="#88B7A7" stroke-width="1.35" stroke-linecap="roun' +
+              'd"/>'#13#10'<path d="M6.07456 2.94382C7.33215 2.21635 8.79224 1.79999 ' +
+              '10.3496 1.79999C15.0716 1.79999 18.8996 5.62795 18.8996 10.35C18' +
+              '.8996 15.072 15.0716 18.9 10.3496 18.9C5.62752 18.9 1.79956 15.0' +
+              '72 1.79956 10.35C1.79956 8.79266 2.21592 7.33258 2.9434 6.07499"' +
+              ' stroke="#88B7A7" stroke-width="1.35" stroke-linecap="round"/>'#13#10 +
+              '</svg>'
+          end
+        end
+        object SearchEditLayout: TLayout
+          Align = Client
+          Size.Width = 233.399993896484400000
+          Size.Height = 45.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object WordSearchEdit: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            StyleLookup = 'transparentedit'
+            TabOrder = 0
+            TextSettings.Font.Family = 'Noto Sans KR'
+            TextSettings.Font.Size = 16.000000000000000000
+            Margins.Left = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 213.399993896484400000
+            Size.Height = 45.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = #44160#49353
+            StyledSettings = [Style, FontColor]
+            OnChange = WordSearchEditChange
+          end
+        end
+      end
+    end
+    object TitleLayout: TLayout
+      Align = MostTop
+      Margins.Left = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Position.X = 20.000000000000000000
+      Size.Width = 268.000000000000000000
+      Size.Height = 73.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object TitleLabel: TLabel
+        Align = Left
+        StyledSettings = [Style, FontColor]
+        Margins.Top = 39.000000000000000000
+        Position.X = 30.000000000000000000
+        Position.Y = 39.000000000000000000
+        Size.Width = 103.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Noto Sans KR'
+        TextSettings.Font.Size = 26.000000000000000000
+        TextSettings.HorzAlign = Center
+        Text = #45800#50612' '#47785#47197
+        TabOrder = 0
+      end
+      object HomeIconSvgLayout: TLayout
+        Align = MostLeft
+        Size.Width = 30.000000000000000000
+        Size.Height = 73.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object HomeIconSvg: TSkSvg
+          Align = Bottom
+          HitTest = True
+          Position.Y = 43.000000000000000000
+          Size.Width = 30.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          OnClick = HomeIconSvgClick
+          Svg.Source = 
+            '<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmln' +
+            's="http://www.w3.org/2000/svg">'#13#10'<path d="M18.5 7.5L11 15L18.5 2' +
+            '2.5" stroke="#88B7A7" stroke-width="1.875" stroke-linecap="round' +
+            '" stroke-linejoin="round"/>'#13#10'</svg>'
+        end
+      end
+    end
+  end
+end

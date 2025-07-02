@@ -1,0 +1,28 @@
+object WarningFrame: TWarningFrame
+  Align = Center
+  Size.Width = 300.000000000000000000
+  Size.Height = 108.000000000000000000
+  Size.PlatformDefault = False
+  object WarningBackRect: TRectangle
+    Align = Client
+    Fill.Color = xFFE8E8E8
+    Size.Width = 300.000000000000000000
+    Size.Height = 108.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = xFFFBFAF7
+    XRadius = 20.000000000000000000
+    YRadius = 20.000000000000000000
+    object WarningLabel: TLabel
+      Align = Center
+      StyledSettings = [Style, FontColor]
+      Size.Width = 252.000000000000000000
+      Size.Height = 46.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Noto Sans KR'
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = #48373#49845#54624' '#45800#50612#44032' '#50630#49845#45768#45796'.'
+      TabOrder = 0
+    end
+  end
+end

@@ -1,0 +1,324 @@
+object QuizResultFrame: TQuizResultFrame
+  Size.Width = 308.000000000000000000
+  Size.Height = 572.000000000000000000
+  Size.PlatformDefault = False
+  object MainLayout: TLayout
+    Align = Client
+    Size.Width = 308.000000000000000000
+    Size.Height = 572.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ResultTitleSectionLayout: TLayout
+      Align = MostTop
+      Size.Width = 308.000000000000000000
+      Size.Height = 73.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object ResultTitleLabel: TLabel
+        Align = Client
+        StyledSettings = [Style, FontColor]
+        Margins.Left = 33.000000000000000000
+        Margins.Top = 39.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Size.Width = 265.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Noto Sans KR'
+        TextSettings.Font.Size = 26.000000000000000000
+        Text = #53300#51592' '#44208#44284
+        TabOrder = 0
+      end
+    end
+    object SummaryCardSectionLayout: TLayout
+      Align = Top
+      Position.Y = 73.000000000000000000
+      Size.Width = 308.000000000000000000
+      Size.Height = 182.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object SummaryCardBackRect: TRectangle
+        Align = Center
+        Fill.Color = claWhite
+        Margins.Top = 34.000000000000000000
+        Size.Width = 267.000000000000000000
+        Size.Height = 148.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFFF0F0F0
+        XRadius = 20.000000000000000000
+        YRadius = 20.000000000000000000
+        object SummaryValuesSectionLayout: TLayout
+          Align = Center
+          Size.Width = 145.000000000000000000
+          Size.Height = 105.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object SummaryCountValueLabel: TLabel
+            Align = Top
+            StyledSettings = [Style, FontColor]
+            Size.Width = 145.000000000000000000
+            Size.Height = 74.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Blinker'
+            TextSettings.Font.Size = 62.000000000000000000
+            TextSettings.HorzAlign = Center
+            Text = '0/0'
+            TabOrder = 1
+          end
+          object SummaryPercentageValueLabel: TLabel
+            Align = Client
+            StyledSettings = [Style]
+            Size.Width = 145.000000000000000000
+            Size.Height = 31.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Blinker'
+            TextSettings.Font.Size = 32.000000000000000000
+            TextSettings.FontColor = xFF88B7A7
+            TextSettings.HorzAlign = Center
+            Text = '0%'
+            TabOrder = 0
+          end
+        end
+      end
+    end
+    object DetailSectionLayout: TLayout
+      Align = Top
+      Position.Y = 255.000000000000000000
+      Size.Width = 308.000000000000000000
+      Size.Height = 170.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object DetailCardBackRect: TRectangle
+        Align = Center
+        Fill.Color = claWhite
+        Margins.Top = 9.000000000000000000
+        Size.Width = 267.000000000000000000
+        Size.Height = 161.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFFF0F0F0
+        XRadius = 20.000000000000000000
+        YRadius = 20.000000000000000000
+        object TotalQuestionsSectionLayout: TLayout
+          Align = Top
+          Size.Width = 267.000000000000000000
+          Size.Height = 53.599998474121090000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object TotalQuestionsTitleLayout: TLayout
+            Align = Left
+            Size.Width = 133.500000000000000000
+            Size.Height = 53.599998474121090000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object TotalQuestionsTitleLabel: TLabel
+              Align = Client
+              StyledSettings = [Style]
+              Margins.Left = 17.000000000000000000
+              Size.Width = 116.500000000000000000
+              Size.Height = 53.599998474121090000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Noto Sans KR'
+              TextSettings.Font.Size = 16.000000000000000000
+              TextSettings.FontColor = xFF838181
+              Text = #52509' '#47928#51228
+              TabOrder = 0
+            end
+          end
+          object TotalQuestionsValueLayout: TLayout
+            Align = Client
+            Size.Width = 133.500000000000000000
+            Size.Height = 53.599998474121090000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object TotalQuestionsValueLabel: TLabel
+              Align = Client
+              StyledSettings = [Style]
+              Margins.Right = 32.000000000000000000
+              Size.Width = 101.500000000000000000
+              Size.Height = 53.599998474121090000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Noto Sans KR'
+              TextSettings.Font.Size = 16.000000000000000000
+              TextSettings.FontColor = xFF838181
+              TextSettings.HorzAlign = Trailing
+              Text = '0'
+              TabOrder = 0
+            end
+          end
+        end
+        object WrongAnswersSectionLayout: TLayout
+          Align = Top
+          Position.Y = 107.199996948242200000
+          Size.Width = 267.000000000000000000
+          Size.Height = 53.599998474121090000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object WrongAnswersTitleLayout: TLayout
+            Align = Left
+            Size.Width = 134.000000000000000000
+            Size.Height = 53.599998474121090000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object WrongAnswersTitleLabel: TLabel
+              Align = Client
+              StyledSettings = [Style]
+              Margins.Left = 17.000000000000000000
+              Size.Width = 117.000000000000000000
+              Size.Height = 53.599998474121090000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Noto Sans KR'
+              TextSettings.Font.Size = 16.000000000000000000
+              TextSettings.FontColor = xFF838181
+              Text = #53952#47536' '#44060#49688
+              TabOrder = 0
+            end
+          end
+          object WrongAnswersValueLayout: TLayout
+            Align = Client
+            Size.Width = 133.000000000000000000
+            Size.Height = 53.599998474121090000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object WrongAnswersValueLabel: TLabel
+              Align = Client
+              StyledSettings = [Style]
+              Margins.Right = 32.000000000000000000
+              Size.Width = 101.000000000000000000
+              Size.Height = 53.599998474121090000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Noto Sans KR'
+              TextSettings.Font.Size = 16.000000000000000000
+              TextSettings.FontColor = xFF838181
+              TextSettings.HorzAlign = Trailing
+              Text = '0'
+              TabOrder = 0
+            end
+          end
+        end
+        object CorrectAnswersSectionLayout: TLayout
+          Align = Top
+          Position.Y = 53.599998474121090000
+          Size.Width = 267.000000000000000000
+          Size.Height = 53.599998474121090000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object CorrectAnswersTitleLayout: TLayout
+            Align = Left
+            Size.Width = 134.000000000000000000
+            Size.Height = 53.599998474121090000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object CorrectAnswersTitleLabel: TLabel
+              Align = Client
+              StyledSettings = [Style]
+              Margins.Left = 17.000000000000000000
+              Size.Width = 117.000000000000000000
+              Size.Height = 53.599998474121090000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Noto Sans KR'
+              TextSettings.Font.Size = 16.000000000000000000
+              TextSettings.FontColor = xFF838181
+              Text = #47582#51008' '#44060#49688
+              TabOrder = 0
+            end
+          end
+          object CorrectAnswersValueLayout: TLayout
+            Align = Client
+            Size.Width = 133.000000000000000000
+            Size.Height = 53.599998474121090000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object CorrectAnswersValueLabel: TLabel
+              Align = Client
+              StyledSettings = [Style]
+              Margins.Right = 32.000000000000000000
+              Size.Width = 101.000000000000000000
+              Size.Height = 53.599998474121090000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Noto Sans KR'
+              TextSettings.Font.Size = 16.000000000000000000
+              TextSettings.FontColor = xFF838181
+              TextSettings.HorzAlign = Trailing
+              Text = '0'
+              TabOrder = 0
+            end
+          end
+        end
+      end
+    end
+    object ButtonsSectionLayout: TLayout
+      Align = Client
+      Size.Width = 308.000000000000000000
+      Size.Height = 147.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      object RetryButtonLayout: TLayout
+        Align = Left
+        Size.Width = 154.000000000000000000
+        Size.Height = 147.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object RetryButtonBackRect: TRectangle
+          Align = Center
+          Fill.Color = claWhite
+          Margins.Left = 33.000000000000000000
+          Margins.Top = 31.000000000000000000
+          Margins.Right = 7.000000000000000000
+          Margins.Bottom = 64.000000000000000000
+          Size.Width = 111.739997863769500000
+          Size.Height = 55.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFFC1D6CF
+          XRadius = 20.000000000000000000
+          YRadius = 20.000000000000000000
+          object RetryButtonLabel: TLabel
+            Align = Client
+            StyledSettings = [Style]
+            Size.Width = 111.739997863769500000
+            Size.Height = 55.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Noto Sans KR'
+            TextSettings.Font.Size = 22.000000000000000000
+            TextSettings.FontColor = xFF88B7A7
+            TextSettings.HorzAlign = Center
+            Text = #45796#49884' '#54400#44592
+            TabOrder = 0
+          end
+        end
+      end
+      object HomeButtonLayout: TLayout
+        Align = Client
+        Size.Width = 154.000000000000000000
+        Size.Height = 147.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object HomeButtonBackRect: TRectangle
+          Align = Center
+          Fill.Color = xFF88B7A7
+          Margins.Left = 7.000000000000000000
+          Margins.Top = 31.000000000000000000
+          Margins.Right = 33.000000000000000000
+          Margins.Bottom = 64.000000000000000000
+          Size.Width = 111.739997863769500000
+          Size.Height = 55.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 20.000000000000000000
+          YRadius = 20.000000000000000000
+          object HomeButtonLabel: TLabel
+            Align = Client
+            StyledSettings = [Style]
+            Size.Width = 111.739997863769500000
+            Size.Height = 55.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Noto Sans KR'
+            TextSettings.Font.Size = 24.000000000000000000
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            Text = #54856#51004#47196
+            TabOrder = 0
+          end
+        end
+      end
+    end
+  end
+end

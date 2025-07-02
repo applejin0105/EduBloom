@@ -1,0 +1,69 @@
+object QuizForm: TQuizForm
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 572
+  ClientWidth = 308
+  Fill.Color = xFFF0F0F0
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  OnHide = FormHide
+  DesignerMasterStyle = 0
+  object MainLayout: TScaledLayout
+    Align = Client
+    OriginalWidth = 308.000000000000000000
+    OriginalHeight = 572.000000000000000000
+    Size.Width = 308.000000000000000000
+    Size.Height = 572.000000000000000000
+    Size.PlatformDefault = False
+    object ProgressBarSectionLayout: TLayout
+      Align = MostTop
+      Size.Width = 308.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object ProgressBarBackRect: TRectangle
+        Align = Bottom
+        Fill.Color = xFFD9D9D9
+        Margins.Left = 20.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = 35.000000000000000000
+        Size.Width = 268.000000000000000000
+        Size.Height = 15.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 7.500000000000000000
+        YRadius = 7.500000000000000000
+        object ProgressBarFillRect: TRectangle
+          Align = Left
+          Fill.Color = xFF31A3AA
+          Size.Width = 10.000000000000000000
+          Size.Height = 15.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 5.000000000000000000
+          YRadius = 5.000000000000000000
+          object ProgressBarFillAnimation: TFloatAnimation
+            Duration = 0.200000002980232200
+            OnFinish = ProgressBarFillAnimationFinish
+            StartValue = 0.000000000000000000
+            StopValue = 0.000000000000000000
+          end
+        end
+      end
+    end
+    object QuizSectionLayout: TLayout
+      Align = Client
+      Size.Width = 308.000000000000000000
+      Size.Height = 522.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+    end
+  end
+end

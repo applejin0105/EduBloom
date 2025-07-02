@@ -1,0 +1,258 @@
+object QuizType4Frame: TQuizType4Frame
+  Size.Width = 308.000000000000000000
+  Size.Height = 520.000000000000000000
+  Size.PlatformDefault = False
+  object MainLayout: TLayout
+    Align = Client
+    Size.Width = 308.000000000000000000
+    Size.Height = 520.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ContentSectionLayout: TLayout
+      Align = Center
+      Margins.Top = 51.000000000000000000
+      Margins.Bottom = 59.000000000000000000
+      Size.Width = 284.000000000000000000
+      Size.Height = 412.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object AnswersSectionLayout: TLayout
+        Align = Bottom
+        Position.Y = 277.000000000000000000
+        Size.Width = 284.000000000000000000
+        Size.Height = 135.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object AnswersLeftSectionLayout: TLayout
+          Align = MostLeft
+          Size.Width = 142.000000000000000000
+          Size.Height = 135.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Option1SectionLayout: TLayout
+            Align = Top
+            Size.Width = 142.000000000000000000
+            Size.Height = 67.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object Option1CardBackRect: TRectangle
+              Align = Center
+              Fill.Color = claWhite
+              Margins.Right = 1.000000000000000000
+              Margins.Bottom = 2.000000000000000000
+              Size.Width = 140.000000000000000000
+              Size.Height = 62.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = xFFF0F0F0
+              XRadius = 20.000000000000000000
+              YRadius = 20.000000000000000000
+              object Option1TextLabel: TLabel
+                Align = Client
+                StyledSettings = [Style, FontColor]
+                Size.Width = 140.000000000000000000
+                Size.Height = 62.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'Blinker'
+                TextSettings.Font.Size = 21.000000000000000000
+                TextSettings.HorzAlign = Center
+                Text = 'Word'
+                TabOrder = 0
+              end
+            end
+          end
+          object Option3SectionLayout: TLayout
+            Align = Client
+            Size.Width = 142.000000000000000000
+            Size.Height = 68.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object Option3CardBackRect: TRectangle
+              Align = Center
+              Fill.Color = claWhite
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 2.000000000000000000
+              Size.Width = 140.000000000000000000
+              Size.Height = 62.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = xFFF0F0F0
+              XRadius = 20.000000000000000000
+              YRadius = 20.000000000000000000
+              object Option3TextLabel: TLabel
+                Align = Client
+                StyledSettings = [Style, FontColor]
+                Size.Width = 140.000000000000000000
+                Size.Height = 62.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'Blinker'
+                TextSettings.Font.Size = 21.000000000000000000
+                TextSettings.HorzAlign = Center
+                Text = 'Word'
+                TabOrder = 0
+              end
+            end
+          end
+        end
+        object AnswersRightSectionLayout: TLayout
+          Align = Client
+          Size.Width = 142.000000000000000000
+          Size.Height = 135.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Option2SectionLayout: TLayout
+            Align = Top
+            Size.Width = 142.000000000000000000
+            Size.Height = 67.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object Option2CardBackRect: TRectangle
+              Align = Center
+              Fill.Color = claWhite
+              Margins.Left = 1.000000000000000000
+              Margins.Bottom = 2.000000000000000000
+              Size.Width = 140.000000000000000000
+              Size.Height = 62.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = xFFF0F0F0
+              XRadius = 20.000000000000000000
+              YRadius = 20.000000000000000000
+              object Option2TextLabel: TLabel
+                Align = Client
+                StyledSettings = [Style, FontColor]
+                Size.Width = 140.000000000000000000
+                Size.Height = 62.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'Blinker'
+                TextSettings.Font.Size = 21.000000000000000000
+                TextSettings.HorzAlign = Center
+                Text = 'Word'
+                TabOrder = 0
+              end
+            end
+          end
+          object Option4SectionLayout: TLayout
+            Align = Client
+            Size.Width = 142.000000000000000000
+            Size.Height = 68.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object Option4CardBackRect: TRectangle
+              Align = Center
+              Fill.Color = claWhite
+              Margins.Left = 2.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Size.Width = 140.000000000000000000
+              Size.Height = 62.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = xFFF0F0F0
+              XRadius = 20.000000000000000000
+              YRadius = 20.000000000000000000
+              object Option4TextLabel: TLabel
+                Align = Client
+                StyledSettings = [Style, FontColor]
+                Size.Width = 140.000000000000000000
+                Size.Height = 62.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'Blinker'
+                TextSettings.Font.Size = 21.000000000000000000
+                TextSettings.HorzAlign = Center
+                Text = 'Word'
+                TabOrder = 0
+              end
+            end
+          end
+        end
+      end
+      object QuestionSectionLayout: TLayout
+        Align = Top
+        Size.Width = 284.000000000000000000
+        Size.Height = 241.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object QuestionCardBackRect: TRectangle
+          Align = Center
+          Fill.Color = claWhite
+          Size.Width = 267.000000000000000000
+          Size.Height = 238.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFFF0F0F0
+          Stroke.Thickness = 2.000000000000000000
+          XRadius = 20.000000000000000000
+          YRadius = 20.000000000000000000
+          object QuestionCardContentLayout: TLayout
+            Align = Center
+            Size.Width = 267.000000000000000000
+            Size.Height = 189.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object QuestionBlankSectionLayout: TLayout
+              Align = MostTop
+              Size.Width = 267.000000000000000000
+              Size.Height = 97.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object BlankDisplayLabel: TLabel
+                Align = Top
+                StyledSettings = [Style, FontColor]
+                Size.Width = 267.000000000000000000
+                Size.Height = 65.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'Blinker'
+                TextSettings.Font.Size = 42.000000000000000000
+                TextSettings.HorzAlign = Center
+                TextSettings.VertAlign = Trailing
+                TextSettings.Trimming = None
+                Text = '_ _ _ _'
+                TabOrder = 0
+              end
+              object HintLabel: TLabel
+                Align = Client
+                Size.Width = 267.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.HorzAlign = Center
+                TextSettings.VertAlign = Leading
+                Text = #45800#50612
+                TabOrder = 1
+              end
+            end
+            object QuestionSentenceSectionLayout: TLayout
+              Align = Client
+              Size.Width = 267.000000000000000000
+              Size.Height = 92.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object EngExampleLabel: TLabel
+                Align = Top
+                StyledSettings = [Style]
+                Size.Width = 267.000000000000000000
+                Size.Height = 49.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'Blinker'
+                TextSettings.Font.Size = 22.000000000000000000
+                TextSettings.HorzAlign = Center
+                TextSettings.VertAlign = Trailing
+                TextSettings.Trimming = None
+                Text = 'I learned a new _ _ _ _ today.'
+                TabOrder = 1
+              end
+              object KrExampleLabel: TLabel
+                Align = Client
+                StyledSettings = [Style]
+                Size.Width = 267.000000000000000000
+                Size.Height = 43.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'Noto Sans KR'
+                TextSettings.FontColor = xFFB8B8B8
+                TextSettings.HorzAlign = Center
+                TextSettings.VertAlign = Leading
+                TextSettings.Trimming = None
+                Text = #45208#45716' '#50724#45720' '#49352#47196#50868' _ _'#51012' '#48176#50912#45796'.'
+                TabOrder = 0
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+end

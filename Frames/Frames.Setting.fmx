@@ -1,0 +1,243 @@
+object SettingFrame: TSettingFrame
+  Size.Width = 300.000000000000000000
+  Size.Height = 248.000000000000000000
+  Size.PlatformDefault = False
+  object MainLayout: TScaledLayout
+    Align = Client
+    OriginalWidth = 300.000000000000000000
+    OriginalHeight = 248.000000000000000000
+    Size.Width = 300.000000000000000000
+    Size.Height = 248.000000000000000000
+    Size.PlatformDefault = False
+    object SettingBackRect: TRectangle
+      Align = Client
+      Fill.Color = xFFFBFAF7
+      Size.Width = 300.000000000000000000
+      Size.Height = 248.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 20.000000000000000000
+      YRadius = 20.000000000000000000
+      object SettingLayout: TLayout
+        Align = Bottom
+        Position.Y = 80.000000000000000000
+        Size.Width = 300.000000000000000000
+        Size.Height = 168.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object CountSelectorSectionLayout: TLayout
+          Align = Top
+          Size.Width = 300.000000000000000000
+          Size.Height = 84.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object CountSelectorLayout: TLayout
+            Align = Center
+            Margins.Top = 20.000000000000000000
+            Size.Width = 135.000000000000000000
+            Size.Height = 46.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object CountValueSectionLayout: TLayout
+              Align = Client
+              Size.Width = 75.000000000000000000
+              Size.Height = 46.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object CountValueBackRect: TRectangle
+                Align = Center
+                Fill.Color = claWhite
+                Size.Width = 57.000000000000000000
+                Size.Height = 46.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Color = xFFF0F0F0
+                Stroke.Thickness = 2.000000000000000000
+                XRadius = 20.000000000000000000
+                YRadius = 20.000000000000000000
+                object CountValueLabel: TLabel
+                  Align = Client
+                  StyledSettings = [Style, FontColor]
+                  Size.Width = 57.000000000000000000
+                  Size.Height = 46.000000000000000000
+                  Size.PlatformDefault = False
+                  TextSettings.Font.Family = 'Blinker'
+                  TextSettings.Font.Size = 21.000000000000000000
+                  TextSettings.HorzAlign = Center
+                  Text = '20'
+                  TabOrder = 0
+                end
+              end
+            end
+            object DecreaseButtonLayout: TLayout
+              Align = MostLeft
+              HitTest = True
+              Size.Width = 30.000000000000000000
+              Size.Height = 46.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              OnClick = DecreaseButtonLayoutClick
+              object DecreaseIconSvg: TSkSvg
+                Align = Center
+                Size.Width = 30.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                Svg.Source = 
+                  '<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmln' +
+                  's="http://www.w3.org/2000/svg">'#13#10'<path d="M18.5 7.5L11 15L18.5 2' +
+                  '2.5" stroke="#88B7A7" stroke-width="1.875" stroke-linecap="round' +
+                  '" stroke-linejoin="round"/>'#13#10'</svg>'
+              end
+            end
+            object IncreaseButtonLayout: TLayout
+              Align = MostRight
+              HitTest = True
+              Position.X = 105.000000000000000000
+              Size.Width = 30.000000000000000000
+              Size.Height = 46.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              OnClick = IncreaseButtonLayoutClick
+              object IncreaseIconSvg: TSkSvg
+                Align = Center
+                Size.Width = 30.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                Svg.Source = 
+                  '<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmln' +
+                  's="http://www.w3.org/2000/svg">'#13#10'<path d="M11.5 22.5L19 15L11.5 ' +
+                  '7.5" stroke="#88B7A7" stroke-width="1.875" stroke-linecap="round' +
+                  '" stroke-linejoin="round"/>'#13#10'</svg>'
+              end
+            end
+          end
+          object TitleLayout: TLayout
+            Align = Center
+            Margins.Bottom = 50.000000000000000000
+            Size.Width = 100.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object TitleLabel: TLabel
+              Align = Client
+              StyledSettings = [FontColor]
+              Size.Width = 100.000000000000000000
+              Size.Height = 20.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Noto Sans KR'
+              TextSettings.Font.Size = 10.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.HorzAlign = Center
+              Text = #49884#51089' '#45800#50612' '#44060#49688
+              TabOrder = 1
+            end
+          end
+        end
+        object ResetLayout: TLayout
+          Align = Client
+          Size.Width = 300.000000000000000000
+          Size.Height = 84.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object ResetButtonRect: TRectangle
+            Align = Center
+            Fill.Color = xFFEC5858
+            Size.Width = 150.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            XRadius = 20.000000000000000000
+            YRadius = 20.000000000000000000
+            OnClick = ResetButtonRectClick
+            object ResetButtonLabel: TLabel
+              Align = Center
+              StyledSettings = [Style]
+              Size.Width = 139.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Noto Sans KR'
+              TextSettings.Font.Size = 20.000000000000000000
+              TextSettings.FontColor = claWhite
+              TextSettings.HorzAlign = Center
+              Text = #45936#51060#53552' '#52488#44592#54868
+              TabOrder = 0
+            end
+          end
+        end
+      end
+      object LogoLayout: TLayout
+        Align = Client
+        Size.Width = 300.000000000000000000
+        Size.Height = 80.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object LogoSectionLayout: TLayout
+          Align = Center
+          Size.Width = 171.000000000000000000
+          Size.Height = 27.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object LogoSvg: TSkSvg
+            Align = Left
+            Size.Width = 30.000000000000000000
+            Size.Height = 27.000000000000000000
+            Size.PlatformDefault = False
+            Svg.Source = 
+              '<svg width="29" height="26" viewBox="0 0 29 26" fill="none" xmln' +
+              's="http://www.w3.org/2000/svg">'#13#10'<g clip-path="url(#clip0_5_343)' +
+              '">'#13#10'<path d="M18.291 4.99768C18.0273 1.94692 16.4459 0.373246 14' +
+              '.2994 0C12.1529 0.372848 10.5711 1.94692 10.3078 4.99768C10.0782' +
+              ' 7.65571 12.4768 11.8449 14.2994 12.9936C16.122 11.8449 18.521 7' +
+              '.65571 18.291 4.99768Z" fill="#88B7A7"/>'#13#10'<path d="M5.9281 7.915' +
+              '27C2.88453 7.37786 0.939906 8.48369 0.0207747 10.4405C-0.171079 ' +
+              '12.5906 0.954757 14.5109 3.86186 15.5527C6.39489 16.4606 11.1017' +
+              ' 15.2498 12.6939 13.8037C12.0453 11.763 8.58034 8.38392 5.9281 7' +
+              '.91567V7.91527Z" fill="#88B7A7"/>'#13#10'<path d="M17.683 24.41C20.047' +
+              '5 26.3828 22.2899 26.388 24.074 25.1486C25.3255 23.3817 25.3202 ' +
+              '21.1613 23.3283 18.8193C21.5927 16.779 16.9056 15.4967 14.7964 1' +
+              '5.9605C14.3276 18.049 15.6224 22.6913 17.683 24.41Z" fill="#88B7' +
+              'A7"/>'#13#10'<path d="M10.9156 24.41C8.55118 26.3828 6.30874 26.388 4.' +
+              '52466 25.1486C3.2732 23.3817 3.27842 21.1613 5.2704 18.8193C7.00' +
+              '592 16.779 11.6931 15.4967 13.8023 15.9605C14.2711 18.049 12.976' +
+              '3 22.6913 10.9156 24.41Z" fill="#88B7A7"/>'#13#10'<path d="M23.0718 7.' +
+              '91527C26.1153 7.37786 28.06 8.48369 28.9791 10.4405C29.1709 12.5' +
+              '906 28.0451 14.5109 25.138 15.5527C22.605 16.4606 17.8981 15.249' +
+              '8 16.3059 13.8037C16.9545 11.763 20.4195 8.38392 23.0718 7.91567' +
+              'V7.91527Z" fill="#88B7A7"/>'#13#10'</g>'#13#10'<defs>'#13#10'<clipPath id="clip0_5' +
+              '_343">'#13#10'<rect width="29" height="26" fill="white"/>'#13#10'</clipPath>' +
+              #13#10'</defs>'#13#10'</svg>'
+          end
+          object LogoLabel: TLabel
+            Align = Client
+            StyledSettings = [Style, FontColor]
+            Size.Width = 141.000000000000000000
+            Size.Height = 27.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Blinker'
+            TextSettings.Font.Size = 28.000000000000000000
+            TextSettings.HorzAlign = Center
+            Text = 'EduBloom'
+            TabOrder = 1
+          end
+        end
+        object ExitButtonSvg: TSkSvg
+          Align = Center
+          HitTest = True
+          Margins.Left = 250.000000000000000000
+          Size.Width = 30.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          OnClick = ExitButtonSvgClick
+          Svg.Source = 
+            '<svg width="100" height="100" viewBox="0 0 100 100" fill="none" ' +
+            'xmlns="http://www.w3.org/2000/svg">'#13#10'<path d="M49.9999 91.6667C7' +
+            '3.0118 91.6667 91.6666 73.0119 91.6666 50C91.6666 26.9881 73.011' +
+            '8 8.33333 49.9999 8.33333C26.9881 8.33333 8.33325 26.9881 8.3332' +
+            '5 50C8.33325 73.0119 26.9881 91.6667 49.9999 91.6667Z" stroke="#' +
+            'C1D6CF" stroke-width="6.25"/>'#13#10'<path d="M65 35.0001L35.0001 64.9' +
+            '999M35 35L65 64.9999" stroke="#C1D6CF" stroke-width="8.99997" st' +
+            'roke-linecap="round"/>'#13#10'</svg>'
+        end
+      end
+    end
+  end
+end

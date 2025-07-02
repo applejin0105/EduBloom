@@ -1,0 +1,120 @@
+object QuizType3Frame: TQuizType3Frame
+  Size.Width = 308.000000000000000000
+  Size.Height = 520.000000000000000000
+  Size.PlatformDefault = False
+  object MainLayout: TLayout
+    Align = Client
+    Size.Width = 308.000000000000000000
+    Size.Height = 520.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ContentSectionLayout: TLayout
+      Align = Center
+      Margins.Top = 104.000000000000000000
+      Margins.Bottom = 174.000000000000000000
+      Size.Width = 284.000000000000000000
+      Size.Height = 294.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object InputSectionLayout: TLayout
+        Align = Bottom
+        Position.Y = 232.000000000000000000
+        Size.Width = 284.000000000000000000
+        Size.Height = 62.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object InputCardBackRect: TRectangle
+          Align = MostBottom
+          Fill.Color = claWhite
+          Size.Width = 284.000000000000000000
+          Size.Height = 62.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFFF0F0F0
+          XRadius = 20.000000000000000000
+          YRadius = 20.000000000000000000
+          object InputEdit: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Center
+            StyleLookup = 'transparentedit'
+            TabOrder = 0
+            TextSettings.Font.Family = 'Blinker'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.HorzAlign = Center
+            Size.Width = 250.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Answer'
+            StyledSettings = [Style, FontColor]
+          end
+        end
+      end
+      object QuestionSectionLayout: TLayout
+        Align = Top
+        Size.Width = 284.000000000000000000
+        Size.Height = 210.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object QuestionCardBackRect: TRectangle
+          Align = Center
+          Fill.Color = claWhite
+          Size.Width = 267.000000000000000000
+          Size.Height = 210.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFFF0F0F0
+          Stroke.Thickness = 2.000000000000000000
+          XRadius = 20.000000000000000000
+          YRadius = 20.000000000000000000
+          object ExamplesSectionLayout: TLayout
+            Align = Center
+            Size.Width = 267.000000000000000000
+            Size.Height = 121.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object EngExampleSectionLayout: TLayout
+              Align = MostTop
+              Size.Width = 267.000000000000000000
+              Size.Height = 71.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object EngExampleTextLabel: TLabel
+                Align = Client
+                StyledSettings = [Style, FontColor]
+                Size.Width = 267.000000000000000000
+                Size.Height = 71.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'Blinker'
+                TextSettings.Font.Size = 22.000000000000000000
+                TextSettings.HorzAlign = Center
+                TextSettings.Trimming = None
+                Text = 'I learned a new _ _ _ _ today.'
+                TabOrder = 0
+              end
+            end
+            object KrExampleSectionLayout: TLayout
+              Align = Top
+              Position.Y = 71.000000000000000000
+              Size.Width = 267.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object KrExampleTextLabel: TLabel
+                Align = Client
+                StyledSettings = [Style]
+                Size.Width = 267.000000000000000000
+                Size.Height = 50.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'Noto Sans KR'
+                TextSettings.FontColor = xFFB8B8B8
+                TextSettings.HorzAlign = Center
+                TextSettings.WordWrap = False
+                TextSettings.Trimming = None
+                Text = #45208#45716' '#50724#45720' '#49352#47196#50868' '#45800#50612#47484' '#48176#50912#45796'.'
+                TabOrder = 0
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+end
